@@ -107,3 +107,32 @@
     width: 280px;
   }
 }
+
+@media (max-width: 768px) {
+  .post__card {
+    width: 175px;
+    max-width: 175px;
+  }
+  .post__card h3 {
+    font-size: 18px;
+  }
+  .post__card p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .postsGrid__container {
+    grid-template-columns: 100%;
+  }
+  .post__card {
+    width: 280px;
+    max-width: 280px;
+  }
+  .post__card h3 {
+    font-size: 18px;
+  }
+  .post__card p {
+    font-size: 12px;
+  }
+}
