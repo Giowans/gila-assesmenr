@@ -1,3 +1,10 @@
+# This assesment is hosted!
+
+Before you scroll down to the default documentation of the project I want to tell you that you can check it out the app in action [here!!](https://giowans.github.io/gila-assesment/)
+
+Here is a preview, I can say is a simple design that I made it as fast as I can, hope do you like it 😅
+![assesment_preview](image.png)
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -17,12 +24,12 @@ If you are developing a production application, we recommend updating the config
 export default {
   // other rules...
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ["./tsconfig.json", "./tsconfig.node.json"],
     tsconfigRootDir: __dirname,
   },
-}
+};
 ```
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
