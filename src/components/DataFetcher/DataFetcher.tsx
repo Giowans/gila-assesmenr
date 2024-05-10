@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useEffect, useState, useCallback } from "react";
 import { fetchAllPostsApiMethod } from "../../api/posts";
 
 import './DataFetcher.css';
@@ -17,7 +17,7 @@ const DataFetcher = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
 
-  const fetchPosts = () => {
+  const fetchPosts = useCallback(() => {
     fetchAllPostsApiMethod().then((data) => {
       setData(data);
       setPostsToShow(data?.slice(0, 4) || []);
@@ -27,7 +27,7 @@ const DataFetcher = () => {
       console.error(error);
       setLoading(false);
     })
-  }
+  }, [data]);
 
   useEffect(() => {
     fetchPosts();
